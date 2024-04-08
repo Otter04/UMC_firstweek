@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="./style(firstweek).css">
+  <script type="text/javascript" src="./logic(firstweek).js"></script>
+</head>
+<body>
+  <div id="todo-container">
+    <h1 id="title">UMC Study Plan</h1>
+    <input type="text" id="todoInput" placeholder="스터디 계획을 작성해보세요!" onkeydown="keyCodeCheck(event)">
+    <div id="tododone">
+      <h2 type="text" id="todoList1">해야 할 일</h2>                
+      <h2 type="text" id="doneList">해낸 일</h2>
+    </div>
+    <ul id="todoList" ></ul>
+    <ul id="doneList"></ul>
+  </div>
+</body>
+</html>

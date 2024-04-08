@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: "#50C2FF";
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin:0;
+}
+
+h1 {
+  margin:0;
+  margin-bottom: 12px;
+}
+
+#todo-container {
+  max-width: 400px;
+}
+
+
+
+#title {
+  text-align: center;
+  color:black
+
+}
+
+#todoList1 {
+  text-align:left;
+  color:black;
+  text-decoration:underline;
+  text-decoration-color:cadetblue
+}
+
+#todo-container #todoInput{
+  width: 400px;
+  margin:20px;
+
+  border: 1px solid #eee;
+  padding:20px 0;
+
+}
+
+#todoList{
+  list-style:none;
+  margin:0;
+  padding:10px;
+  text-align:left;
+}
+
+#todoList li{
+  padding: 10px 0;
+  user-select:none;
+}
+
+#todoList button{
+  background-color:grey;
+  border:none;
+  
+}
+
+#doneList {
+  text-align:right;
+  color:black;
+  text-decoration:underline;
+  text-decoration-color:cadetblue
+}
+
+#todoInput {
+  background-color: azure;
+  color:lightgray;
+  font-weight:800;
+  opacity:0.5;
+}
+
