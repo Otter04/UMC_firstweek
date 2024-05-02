@@ -1,13 +1,38 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  background-color:rgb(46, 41, 154);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app-container{
+  display: flex; /*flex의 기본 속성은 row이다*/
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+.movie-container{
+  width:250px;
+  border: 5px solid rgb(5, 5, 5);
+  margin:20px;
+  background-color: rgb(27, 17, 86);
+  color:white;
+  box-shadow: 3px 3px black;
+  
+}
+
+.movie-container:hover{
+  background-color:rgb(28, 28, 34) ;
+  filter:opacity();
+  visibility:hidden;
+}
+
+
+.movie-container img{
+  max-width:100%    /*즉, "movie-container" 클래스를 가진 요소 안에 있는 이미지는 너비가 가득 차도록 조정됩니다. 이렇게 함으로써 이미지가 화면에 적절하게 표시되고 레이아웃이 유연하게 조정될 수 있게 됩니다.*/
+}   
+
+.movie-info{
+  display:flex;
+  padding:10px;
+  justify-content: space-between;    /*여기서 실제 작동된 화면을 보면 제목과 평점이 너무 붙어있는데 이를 어떻게 해결할까요?*/
+  align-items: center;
+}
+
